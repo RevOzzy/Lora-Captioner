@@ -53,32 +53,16 @@ A small, focused tool to turn folders of images into **LoRA-ready datasets** usi
 
 ## Screenshots / UI Preview
 
-> **Note:** Replace these placeholders with your own screenshots once you have them.
-
-- **Model Load Screen**  
-  Shows the Florence-2 model dropdown and “Load Selected Model” button.
-
-- **Captioning Options Panel**  
-  - Input folder path  
-  - Output dataset path  
-  - Caption style (`Tags (for LoRA)` or `Natural Sentence`)  
-  - Keyword prefix, common phrase, default subject tag  
-  - Minimum resolution and file prefix
-
-- **Processing Log**  
-  Shows:
-  - Raw Florence caption
-  - Final cleaned caption
-  - Copy + `.txt` success messages
-
-You can add screenshots like:
-
-```markdown
 ![Model Load Screen](docs/screenshot-model-load.png)
+
 ![Caption Options](docs/screenshot-options.png)
+
 ![Processing Log](docs/screenshot-log.png)
 
-Example Output
+
+
+
+## Example Output
 Input
 
     Image: a woman on a tropical beach in a white floral dress
@@ -104,7 +88,7 @@ Final caption might look like:
 Young woman walking on a tropical beach in a white floral dress with a deep v-neckline and thin straps, long hair blowing in the wind, ocean and palm trees in the background.
 
 More readable for general captioning, documentation, or metadata.
-Performance Notes / Benchmarks
+## Performance Notes / Benchmarks
 
 Actual performance will vary by hardware, but some general expectations:
 
@@ -130,7 +114,7 @@ Actual performance will vary by hardware, but some general expectations:
 
         If you plan to run on CPU only, expect longer processing times and consider using the BLIP-based CLI script for lighter workloads.
 
-FAQ
+## FAQ
 Does this work offline?
 
 Yes, after the first run.
@@ -196,7 +180,7 @@ The Gradio app (app.py) is built around the Florence-2 interface. However:
         could be added there.
 
 For a simpler example using BLIP, see lora_dataset_builder.py.
-Troubleshooting
+## Troubleshooting
 bitsandbytes / CUDA errors
 
 Common issues:
@@ -229,7 +213,7 @@ If model downloads fail:
 
     Confirm that models_cache/ is writable.
 
-Model Comparison
+## Model Comparison
 
 By default, models.txt might look like:
 
@@ -260,7 +244,7 @@ You can test both and see which works best for your GPU and desired caption deta
 File Overview
 app.py
 
-Main Gradio application:
+## Main Gradio application:
 
     Loads a Florence-2 model from a dropdown (models.txt driven)
 
@@ -327,7 +311,7 @@ Python dependencies for this project, including:
 
     and related packages.
 
-Install with:
+## Install with:
 
 pip install -r requirements.txt
 
@@ -364,7 +348,7 @@ pip install -r requirements.txt
 
     Should print True if your GPU is available.
 
-Usage (Gradio App – Florence-2)
+## Usage (Gradio App – Florence-2)
 
     Prepare folders
 
@@ -380,7 +364,7 @@ Start the app
 
 python app.py
 
-This will launch a local Gradio server and display a URL in your terminal (typically http://127.0.0.1:7860 or similar).
+This will launch a local Gradio server and display a URL in your terminal (typically http://127.0.0.1:8123 or similar).
 
 In the browser UI
 
@@ -430,7 +414,7 @@ Your output folder will contain pairs like:
 
     Ready to be dropped into your LoRA training pipeline.
 
-Usage (CLI Example – BLIP)
+## Usage (CLI Example – BLIP)
 
 If you prefer a simple command-line script:
 
@@ -454,7 +438,7 @@ Run:
 This is a lighter-weight option if you don’t need Florence-2 or the Gradio UI.
 License
 
-This project is licensed under the MIT License.
+## This project is licensed under the MIT License.
 
 You are free to use, modify, and distribute it, subject to the terms of the MIT license.
 Remember that the underlying models (e.g., Florence-2, BLIP) are subject to their own licenses on Hugging Face — please review and comply with those as well.
