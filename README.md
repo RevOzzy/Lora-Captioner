@@ -50,6 +50,48 @@ A small, focused tool to turn folders of images into **LoRA-ready datasets** usi
   - `lora_dataset_builder.py` — simple **CLI example** using BLIP
 
 ---
+## 🚀 Quick Start
+
+1.  **Clone the Repository**
+    Open your terminal or command prompt, `cd` to the directory where you want to store the project, and run:
+    ```bash
+    git clone [https://github.com/RevOzzy/Lora-Captioner.git](https://github.com/RevOzzy/Lora-Captioner.git)
+    cd Lora-Captioner
+    ```
+
+2.  **Create a Virtual Environment**
+    It's highly recommended to use a virtual environment to avoid conflicts with other Python projects.
+    ```bash
+    python -m venv venv
+    ```
+
+3.  **Activate the Environment**
+    * **On Windows:**
+        ```cmd
+        .\venv\Scripts\activate
+        ```
+    * **On macOS/Linux:**
+        ```bash
+        source venv/bin/activate
+        ```
+    Your terminal prompt will usually change to show `(venv)` at the beginning.
+
+4.  **Install Dependencies**
+    Install all the required packages from the `requirements.txt` file.
+    ```bash
+    pip install -r requirements.txt
+    ```
+    > **Note:** This step might take a few minutes. It needs to download PyTorch, which is a large library.
+
+5.  **Run the App**
+    * **On Windows:** Simply double-click the **`run_app.bat`** file.
+    * **On macOS/Linux (or manually):**
+        ```bash
+        python app.py
+        ```
+
+6.  **Open the Web UI**
+    Once the script is running, your terminal will show a local URL. [cite_start]Open that link in your browser (it's usually **`http://127.0.0.1:8123`**). [cite: 3]
 
 ## Screenshots / UI Preview
 
