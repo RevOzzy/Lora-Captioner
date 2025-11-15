@@ -1,0 +1,14 @@
+# Dataset folders - DO NOT UPLOAD
+my_lora_dataset/
+input_images/
+
+# Python cache and environment
+__pycache__/
+*.pyc
+venv/
+.venv/
+.vscode/
+.idea/
+
+# Local Hugging Face model cache
+models_cache/

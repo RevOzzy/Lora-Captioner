@@ -1,0 +1,2 @@
+Florence-2 (Large),microsoft/Florence-2-large
+Florence-2 (Base),microsoft/Florence-2-base
