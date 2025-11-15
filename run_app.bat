@@ -15,7 +15,7 @@ echo (Or whatever port you set in app.py)
 echo.
 echo Press Ctrl+C in this window to stop the server.
 echo.
-
+set CUDA_VISIBLE_DEVICES=0
 :: This runs your Gradio app
 python app.py
 
